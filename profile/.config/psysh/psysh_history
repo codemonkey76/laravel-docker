@@ -14,3 +14,5 @@ broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
 broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
 broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
 broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+env('SOCKET_HOST');
+exit

@@ -1,31 +1,29 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 require('./bootstrap');
 
-window.Vue = require('vue').default;
+import "tailwindcss/tailwind.css"
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+import Vue from 'vue';
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+// Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
+import { faBuffer } from "@fortawesome/free-brands-svg-icons";
+import { faBuilding, faBug, faCog, faHome, faTachometerAlt, faTasks, faTicketAlt, faUsers } from "@fortawesome/free-solid-svg-icons";
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+library.add(faAddressCard, faBuffer, faBuilding, faBug, faCog, faHome, faTachometerAlt, faTasks, faTicketAlt, faUsers);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+// Vue toast notifications
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
+Vue.use(VueToast);
+
+
+const files = require.context('./', true, /\.vue$/i)
+files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 const app = new Vue({
     el: '#app',
