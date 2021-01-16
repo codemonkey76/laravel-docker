@@ -1,0 +1,16 @@
+_HiStOrY_V2_
+broadcast(new\040GlobalNotification('test',\040'success');
+broadcast(new\040GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Event\134GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+exit
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+exit
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+exit
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
+broadcast(new\040\134App\134Events\134GlobalNotification('test',\040'success'));
